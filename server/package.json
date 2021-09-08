@@ -4,7 +4,8 @@
   "description": "Search Engine API",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon index.js"
   },
   "author": "Arafath Miah, Sansi Bindika",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "jest": "^27.1.1"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.12"
   }
