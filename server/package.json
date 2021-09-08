@@ -1,0 +1,18 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "Search Engine API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Arafath Miah, Sansi Bindika",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.1.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
