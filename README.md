@@ -10,6 +10,9 @@
 
 ### Usage
 
+* Navigate to `server` folder and create `.env` file.
+* Add the following line of code `API_KEY="YOUR_API_KEY"` and replace `YOUR_API_KEY` with your personal API key provided by Google and save.
+* OPTIONAL - In file `searchRoutes.js` inside `server/routes` folder, replace `cx` in function `getUrl` with your own ID provided by Google.
 * Run `npm start` to launch server on port 3000.
 * Run `index.html` on a different port using `liveserver` or `python`.
 
