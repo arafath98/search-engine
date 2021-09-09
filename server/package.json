@@ -1,0 +1,22 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "Search Engine API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  },
+  "author": "Arafath Miah, Sansi Bindika",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}

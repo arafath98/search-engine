@@ -1,0 +1,86 @@
+:root {
+    --button-bg-colour: #f8f9fa;
+    --button-hover-bg-colour: #dadce0;
+
+    --search-box-shadow-colour: rgba(32, 33, 36, 0.28);
+    --search-box-border-colour: #dfe1e5;
+
+    --search-element-title-colour: #1a0dab;
+}
+
+#logo {
+    width: 100%;
+}
+
+#search-logo {
+    width: 20px;
+    color: grey;
+    margin-right: 5px;
+}
+
+/* Class search bar is the wrapper that includes also the search icon */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+    border-radius: 30px;
+    border: 1px solid var(--search-box-border-colour);
+}
+
+/* .search-bar:focus not working */
+/* Need JS to fix it */
+/* Or CSS superpower lol */
+.search-bar:hover, .search-bar:focus {
+    box-shadow: 0 1px 6px var(--search-box-shadow-colour);
+}
+
+/* Id search is only the input search bar */
+#search-bar {
+    width: 90%;
+    border: none;
+}
+
+#search-bar:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--button-bg-colour);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    padding: 9px;
+    border: 1px solid var(--button-hover-bg-colour);
+}
+
+/* Search elements section */
+#search-results {
+    color: var(--search-element-text-colour);
+}
+
+#search-results a {
+    text-decoration: none;
+    color: black;
+}
+
+#search-results a h6 {
+    font-weight: normal;
+}
+
+#search-results a h5 {
+    color: var(--search-element-title-colour);
+}
+
+#search-results a h5:hover {
+    text-decoration: underline;
+}
