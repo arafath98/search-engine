@@ -12,7 +12,7 @@ const updateInfo = (data) => {
     const searchSection = document.getElementById("search-results")
 
     // Cleaning in case there were previous search results
-    searchSection.innerHTML = "";
+    searchSection.textContent = "";
 
     let toAppend = "";
 
