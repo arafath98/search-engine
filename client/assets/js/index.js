@@ -19,7 +19,7 @@ const updateInfo = (data) => {
 
         <div class="row mx-3">
             <div class="col-9 col-sm-8 col-md-7 col-lg-6 col-xl-5">
-                <a href="${element.link}">
+                <a href="${element.link}" target="_blank">
                     <h6>${element.displayLink}</h6>
                     <h5 class="mt-2">${element.title}</h5>
                 </a>
@@ -73,5 +73,5 @@ searchButton.addEventListener("click", (e) => {
     if (searchBar.value == "undefined")
         return;
 
-    searchAndUpdate();
+    searchAndUpdate(searchBar.value);
 });
