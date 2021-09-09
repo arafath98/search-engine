@@ -50,17 +50,17 @@ const filterItems = (items) => {
 
 
 // Routes
-router.get("/", (req, res) => {
+router.get("/:string", (req, res) => {
 
-    // Will be replaced with the search bar data from the request
-    const toSearch = "Elon Musk";
+    // What to search from Google
+    const toSearch = req.params.string;
 
     axios.get(getUrl(toSearch))
         .then(response => {
             // Getting the array with the elements, 10 elements on a request
             const items = response.data.items;
 
-            console.log(items);
+            // console.log(items);
 
             // Filter all the items keeping only the necessary properties
             const filteredItems = filterItems(items);
@@ -68,10 +68,6 @@ router.get("/", (req, res) => {
             res.send(filteredItems);
         })
         .catch(error => res.send(error)); // Sending back the error in case the API fails
-});
-
-router.post("/", (req, res) => {
-    res.send("Here your searches");
 });
 
 module.exports = router;
