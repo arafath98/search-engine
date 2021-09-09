@@ -104,6 +104,7 @@ luckyButton.addEventListener("click", e => {
     // Builds the full url used for the search
     const fullUrl = `${url}${port}/${path}/${words}`;
 
+    // After getting the data from the API, it redirects to the first element
     fetch(fullUrl)
         .then((response) => response.json())
         .then(data => window.location.replace(data[0].link));
